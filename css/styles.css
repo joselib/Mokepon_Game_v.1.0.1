@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
+body {
+  font-family: "Baloo 2", cursive;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: #0078aa;
+}
+
+#choose-pet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  color: #eaeaea;
+}
+
+#subtitle {
+  color: #106a9b;
+}
+
+.cards, .button-atacks {
+  display: flex;
+  gap: 10px;
+}
+.card-mokepon {
+  width: 200px;
+  height: 100px;
+  background-color: #3ab4f2;
+  border-radius: 5%;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: 1px solid #e1ffdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e1ffdc;
+}
+.card-mokepon img {
+  width: 80px;
+  border-radius: 5%;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 100%;
+  background-color: #83af7b;
+}
+
+#button-pet {
+  width: 200px;
+  height: 50px;
+  background-color: #f2df3a;
+  border-radius: 5%;
+  border: 1px solid #106a9b;
+  color: #106a9b;
+  font-size: 1.5rem;
+  font-family: "Baloo 2", cursive;
+  cursor: pointer;
+}
+
+#choose-atack {
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-atack {
+  width: 200px;
+  height: 50px;
+  background-color: #f2df3a;
+  border-radius: 5%;
+  border: 1px solid #106a9b;
+  color: #106a9b;
+  font-size: 1.5rem;
+  font-family: "Baloo 2", cursive;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#message {
+  width: 500px;
+  color: #ebf2f5;
+  font-size: 1.5rem;
+  background-color: #3ab4f2;
+  border-radius: 5%;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#button-restart {
+border: none;
+color: #106a9b;
+}
+
+.atacks {
+  display: grid;
+  grid-template-columns: 150px 150px;
+}
+
+.atacks-player, .atacks-enemy{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+@media screen and (max-width: 360px) {
+  .cards, .button-atacks {
+    flex-direction: column;
+  }
+}
+  
